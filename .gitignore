@@ -1,0 +1,22 @@
+# Maven
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Don't ship the sample users file by accident over the real one
+# Users.xlsx
+!Users.sample.xlsx

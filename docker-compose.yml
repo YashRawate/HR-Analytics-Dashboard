@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  hr-analytics:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nmdc-hr-analytics:latest
+    container_name: nmdc-hr-analytics-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./Users.xlsx:/app/Users.xlsx
+    restart: unless-stopped
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: nmdc-hr-analytics-tunnel
+    command: tunnel --url http://hr-analytics:5000
+    restart: unless-stopped
+    depends_on:
+      - hr-analytics
