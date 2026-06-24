@@ -19,8 +19,7 @@ COPY --from=build /build/target/nmdc-hr-analytics.jar /app/app.jar
 COPY Users.xlsx /app/Users.xlsx
 COPY nmdc_login.html /app/nmdc_login.html
 COPY frontend /app/frontend
-COPY "NMDC LOGO.jpg" "/app/NMDC LOGO.jpg"
-
+COPY ["NMDC LOGO.jpg", "/app/NMDC LOGO.jpg"]
 EXPOSE 5000
 
 # Run the spring boot application
