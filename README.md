@@ -328,7 +328,7 @@ All `/api/*` endpoints require an active session. Responses are JSON.
 ## 👤 Author
 
 **Yash Rawate**  
-[GitHub](https://github.com/YashRawate) · [LinkedIn](https://linkedin.com/in/your-profile) · [Email](mailto:your@email.com)
+[GitHub](https://github.com/YashRawate) · [LinkedIn](https://linkedin.com/in/your-profile) · [Email](yashrawate24@email.com)
 
 ---
 
